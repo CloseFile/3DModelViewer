@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/sketchfabFragment">
+
+    <fragment
+        android:id="@+id/sketchfabFragment"
+        android:name="com.ctapk.poly.features.sarch.view.Modlel3dListFragment"
+        android:label="sketchfab_fragment"
+        tools:layout="@layout/sketchfab_fragment" >
+        <action
+            android:id="@+id/action_sketchfabFragment_to_viewerFragment"
+            app:destination="@id/viewerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewerFragment"
+        android:name="com.ctapk.poly.features.viewer.view.ViewerFragment"
+        android:label="viewer_fragment"
+        tools:layout="@layout/viewer_fragment" />
+</navigation>
